@@ -28,3 +28,7 @@ router.listen(8001, () => {
 Notes:
 
 * Don't use `class` keyword while implementing the `Router` constructor
+
+Resources:
+
+* Anatomy of an HTTP Transaction (https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
