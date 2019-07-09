@@ -1,4 +1,4 @@
-# Write mini router in ./lib.js file to satisfy requirements of app.js file
+# Write mini version of `express` in ./lib to satisfy requirements of app.js file
 
 Contents of app.js:
 
