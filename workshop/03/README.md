@@ -3,8 +3,8 @@
 Contents of app.js:
 
 ```js
-const Application = require('./lib.solution/application')
-const Router = require('./lib.solution/router')
+const Application = require('./lib/application')
+const Router = require('./lib/router')
 
 const users = []
 
@@ -36,7 +36,7 @@ router.delete('/users', ctx => {
   ctx.res.json('delete request...')
 })
 
-app.use(router)
+app.use(router.routes())
 
 function notFound(ctx, next) {
   res.status(404).json('not found')
