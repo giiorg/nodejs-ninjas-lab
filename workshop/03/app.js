@@ -31,10 +31,10 @@ router.delete('/users', ctx => {
   ctx.res.json('delete request...')
 })
 
-app.use(router.routes())
+app.use(router.getMiddleware())
 
 function notFound(ctx, next) {
-  res.status(404).json('not found')
+  ctx.res.status(404).json('not found')
 }
 app.use(notFound)
 
