@@ -9,16 +9,7 @@ app.on('error', (err, ctx) => {
   ctx.res.json(err.message)
 })
 
-app.on('listen', (err, port) => {
-  if (err) {
-    console.log(
-      `Could not start server on http://localhost:${port} because of error: ${
-        err.message
-      }`
-    )
-    return
-  }
-
+app.on('listen', port => {
   console.log(`Server is running on http://localhost:${port}`)
 })
 
