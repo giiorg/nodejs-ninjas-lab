@@ -38,4 +38,4 @@ app.run()
 Resources:
 
 * [Anatomy of an HTTP Transaction](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
-* [EventEmitter documentationj](https://nodejs.org/api/events.html)
+* [EventEmitter documentation](https://nodejs.org/api/events.html)
