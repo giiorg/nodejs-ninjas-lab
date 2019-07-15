@@ -1,4 +1,6 @@
-# Write your own implementation of EventEmitter class in ./lib/event-emitter.js and extend your EventEmitter in ./lib/application instead of node.js's EventEmitter class (note: requirements from app.js file's perspective stays the same)
+# EventEmitter
+
+### Write your own implementation of EventEmitter class in ./lib/event-emitter.js and extend Application class with your EventEmitter in ./lib/application instead of node.js's EventEmitter (note: requirements from app.js file's perspective stays the same)
 
 Contents of app.js:
 
