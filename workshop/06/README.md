@@ -10,7 +10,9 @@ const Router = require('./lib/router')
 
 const users = []
 
-const app = new Application()
+const port = 8001
+
+const app = new Application({ port })
 
 function isAuth(ctx, next) {
   console.log('checking whether authenticated')
@@ -38,10 +40,8 @@ router.delete('/', ctx => {
   ctx.res.json('delete request...')
 })
 
-// runs only on the matched path that starts with '/users'
 app.use('/users', router.getMiddleware())
 
-// runs only on the matched path that starts with '/other'
 app.use('/other', (ctx, next) => {
   console.log('other')
   ctx.res.json('other middleware')
@@ -52,8 +52,5 @@ function notFound(ctx, next) {
 }
 app.use(notFound)
 
-app.listen(8001, () => {
-  console.log('Server listens to http://localhost:8001')
-})
-
+app.run()
 ```
