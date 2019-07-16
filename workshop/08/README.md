@@ -12,8 +12,8 @@ const port = 8001
 const app = new Application({ port })
 
 // regex: should be matched on `/users`
-app.use(/.*rs$/, (ctx, next) => {
-  console.log('(/.*rs$/')
+app.use(/(.*)rs$/, (ctx, next) => {
+  console.log('/(.*)rs$/')
   next()
 })
 
